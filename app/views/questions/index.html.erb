@@ -1,0 +1,8 @@
+<% if @question %>
+  <p><%= @question.text %></p>
+  <%= link_to "answer", question_path(@question.id) %>
+  <%= link_to "more?", questions_path %>
+
+<% else %>
+  no questions to show!
+<% end %>
