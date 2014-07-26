@@ -1,0 +1,7 @@
+<% if @questions %>
+  <% @questions.each do |question| %>
+    <%= link_to question.text, question_path(question.id) %>
+  <% end %>
+<% else %>
+  you have no questions to show!
+<% end %>

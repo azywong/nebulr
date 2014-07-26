@@ -11,4 +11,9 @@ class UsersController < ApplicationController
       render :new
     end
   end
+
+  def questions
+    @user = User.find(session[:id])
+    @questions = @user.questions
+  end
 end
