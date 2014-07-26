@@ -1,5 +1,7 @@
 <% if session[:id] %>
   logged in
+  <%= link_to "my questions", user_questions_path %>
+  <%= link_to "new question", new_question_path %>
   <%= link_to "logout", sessions_exit_path %>
 <% else %>
   <%= link_to "not logged in", sessions_new_path %>
