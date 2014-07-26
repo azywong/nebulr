@@ -1,5 +1,6 @@
 <% if session[:id] %>
   logged in
+  <%= link_to "logout", sessions_exit_path %>
 <% else %>
-  not logged in
+  <%= link_to "not logged in", sessions_new_path %>
 <% end %>
