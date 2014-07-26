@@ -10,7 +10,9 @@ Nebulr::Application.routes.draw do
   match 'user/questions' => 'user#questions'
 
   resources :questions do
-    resources :answers
+    resources :answers do
+      resources :votes
+    end
   end
 
 end

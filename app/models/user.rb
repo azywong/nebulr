@@ -5,4 +5,5 @@ class User < ActiveRecord::Base
   has_many :answerers, :through => :matches
   has_many :questions
   has_many :answers
+  has_many :votes
 end
