@@ -1,0 +1,10 @@
+<%= @question.text %>
+  <% if @question.answers.length > 0 %>
+    <% @question.answers.each do |answer| %>
+      <p><%= answer.text %></p>
+    <% end %>
+  <% end %>
+<%= form_for ([@question, @answer]), html: {class: "answer_form"} do |f| %>
+  <%= f.text_area :text %>
+  <%= f.submit "Answer" %>
+<% end %>
