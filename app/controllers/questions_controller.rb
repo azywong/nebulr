@@ -1,6 +1,6 @@
 class QuestionsController < ApplicationController
   def index
-    @question = Question.first(:order => "RANDOM()")
+    @question = QuestionFinder.find
   end
 
   def new
