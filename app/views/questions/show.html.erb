@@ -17,7 +17,6 @@
   <% end %>
 
 <% if @question.user_id == session[:id] %>
-  <p>this is your question</p>
 <% else %>
   <%= form_for ([@question, @answer]), html: {class: "answer_form"} do |f| %>
     <%= f.text_area :text %>
