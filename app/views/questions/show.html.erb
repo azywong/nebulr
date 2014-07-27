@@ -3,7 +3,7 @@
     <ul class="answer_list">
       <% @question.answers.each do |answer| %>
         <li class="answer_box">
-          <div class="vote_side">
+          <div class="vote_side col-md-4">
             <div class="vote_total"><%= answer.votes.map(&:value).reduce(:+) %> <br /> votes</div>
             <% if answer.user_id == session[:id] %>
             <% else %>
@@ -13,7 +13,10 @@
               </div>
             <% end %>
           </div>
-          <div class="answer_text"><%= answer.text %></div>
+          <div class="answer_text col-md-8">
+            <%= answer.text %>
+          </div>
+          <div class="clearfix"></div>
         </li>
       <% end %>
     </ul>
