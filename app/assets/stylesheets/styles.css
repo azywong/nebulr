@@ -63,7 +63,7 @@ textarea, .answer_form input[type="submit"], .question_form input[type="submit"]
 /* question styles */
 .question_text, .answer_text {
   background-color: #FFDD93;
-  padding: 5px;
+  padding: 10% 10%;
   box-shadow: 7px 7px 3px #FEBD2B;
   max-width: 500px;
   width: 100%;
