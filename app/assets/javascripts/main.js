@@ -1,14 +1,14 @@
 $(function(){
-  $('.question_yes').on("swiperight", answerQuestion)
-  $('.question_no').on("swipeleft", nextQuestion)
+  $('.question_text').on("swiperight", answerQuestion)
+  $('.question_text').on("swipeleft", nextQuestion)
 })
 
 var answerQuestion = function(event){
-  $('.question_yes').addClass("swipeRight")
-  window.location.replace( $(event.target).attr('href') );
+  $('.question_yes').addClass("fade")
+  window.location.replace( $('.question_yes a').attr('href') );
 }
 
 var nextQuestion = function(){
-  $('.question_no').addClass("swipeLeft")
-  window.location.replace( $(event.target).attr('href') );
+  $('.question_no').addClass("fade")
+  window.location.replace( $('.question_no a').attr('href') );
 }

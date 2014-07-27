@@ -5,6 +5,12 @@ body {
   padding-bottom: 20px;
 }
 
+.fade {
+  -webkit-opacity: 0.25;
+  -moz-opacity: 0.25;
+  opacity: 0.25;
+}
+
 /* Sign In Styles */
 
 .form-signin {
