@@ -98,3 +98,22 @@ input, textarea, button {
   text-decoration: none;
   color: #443266;
 }
+.question_yes {
+  -webkit-transition: right 1s linear;
+}
+.question_no {
+  -webkit-transition: left 1s linear;
+}
+
+
+/* button swiping styles */
+.question_yes.swipeRight {
+  -webkit-opacity: 0.25;
+  -moz-opacity: 0.25;
+  opacity: 0.25;
+}
+.question_no.swipeLeft {
+  -webkit-opacity: 0.25;
+  -moz-opacity: 0.25;
+  opacity: 0.25;
+}

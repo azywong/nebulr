@@ -1,8 +1,8 @@
 <% if @question %>
   <div class="question_text"><%= @question.text %></div>
   <div class="question_button">
-    <span class="question_yes"><%= link_to "yes, answer this!", question_path(@question.id) %></span>
     <span class="question_no"><%= link_to "no, view another?", questions_path %></span>
+    <span class="question_yes"><%= link_to "yes, answer this!", question_path(@question.id) %></span>
   </div>
 <% else %>
   no questions to show!
