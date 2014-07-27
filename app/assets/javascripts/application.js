@@ -14,4 +14,5 @@
 //= require jquery_ujs
 //= require bootstrap.min
 //= require jquery.mobile.min
+//= require swipedown
 //= require_tree .

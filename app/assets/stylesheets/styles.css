@@ -109,6 +109,20 @@ textarea, .answer_form input[type="submit"], .question_form input[type="submit"]
   background-color: #FFC4BC;
   color: #8B2316;
 }
+.question_info a {
+  font-size: 1.5em;
+  background-color: #bcbcbc;
+  padding: 0.5em;
+  border-radius: 0.75em;
+  text-decoration: none;
+  color: #333333;
+  border: 0;
+  margin: 1%;
+}
+.question_info a:hover {
+  background-color: #dedede;
+  color: #555555;
+}
 .answer_box {
   margin-bottom: 3em;
 }
