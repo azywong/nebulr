@@ -67,22 +67,12 @@ input, textarea, button {
   margin: 2em auto;
 }
 
-/* vote button styles */
-.button_to input {
-  display: inline;
-  width: 30%;
-  max-width: 100px;
-}
-.button_to, .button_to div {
-  display: inline;
-}
-
 /* question styles */
 .question_text {
   width: 80%;
   margin: 0 auto;
   background-color: #D9D8DF;
-  border-radius: 2em;
+  border-radius: 0.75em;
   padding: 5px;
 }
 .question_button {
@@ -100,26 +90,35 @@ input, textarea, button {
 }
 .question_yes a:hover, .question_no a:hover {
   background-color: #C3C3E5;
-  border-radius: 0.75em;
-  text-decoration: none;
   color: #443266;
 }
-.question_yes {
-  -webkit-transition: right 1s linear;
+.answer_box {
+  min-height: 250px;
+  clear: both;
 }
-.question_no {
-  -webkit-transition: left 1s linear;
+.answer_list {
+  list-style-type: none;
+  padding-left: 0;
+}
+.answer_list li {
+  margin-left: 0;
+}
+.vote_side {
+  float: left;
+}
+.vote_total {
+  width: 75%;
+  text-align: center;
 }
 
-
-/* button swiping styles */
-.question_yes.swipeRight {
-  -webkit-opacity: 0.25;
-  -moz-opacity: 0.25;
-  opacity: 0.25;
+/* vote button styles */
+.button_to input {
+  display: inline;
+  width: 75%;
+  min-width: 35px;
+  max-width: 100px;
+  margin: 1%;
 }
-.question_no.swipeLeft {
-  -webkit-opacity: 0.25;
-  -moz-opacity: 0.25;
-  opacity: 0.25;
+.button_to, .button_to div {
+  display: inline;
 }
