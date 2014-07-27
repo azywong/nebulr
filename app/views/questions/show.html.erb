@@ -3,20 +3,17 @@
     <ul class="answer_list">
       <% @question.answers.each do |answer| %>
         <li class="answer_box">
-          <div class="vote_side col-md-4">
-            <div class="vote_total"><%= answer.votes.map(&:value).reduce(:+) %> <br /> votes</div>
+            <div class="vote_total"><%= answer.votes.map(&:value).reduce(:+) %> votes</div>
+          <div class="answer_text">
+            <%= answer.text %>
+          </div>
             <% if answer.user_id == session[:id] %>
             <% else %>
               <div class="voting">
-                <%= button_to "upvote", question_answer_votes_path(@question, answer, value: 1) %>
-                <%= button_to "downvote", question_answer_votes_path(@question, answer, value: -1) %>
+                <%= button_to "upvote", question_answer_votes_path(@question, answer, value: 1), class: "upvote_button" %>
+                <%= button_to "downvote", question_answer_votes_path(@question, answer, value: -1), class: "downvote_button" %>
               </div>
             <% end %>
-          </div>
-          <div class="answer_text col-md-8">
-            <%= answer.text %>
-          </div>
-          <div class="clearfix"></div>
         </li>
       <% end %>
     </ul>

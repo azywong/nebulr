@@ -11,6 +11,13 @@ body {
   opacity: 0.25;
 }
 
+textarea, .answer_form input[type="submit"] {
+  display: block;
+  width: 65%;
+  margin: 1% auto;
+  max-width: 500px;
+}
+
 /* Sign In Styles */
 
 .form-signin {
@@ -54,7 +61,7 @@ body {
 }
 
 /* question styles */
-.question_text {
+.question_text, .answer_text {
   background-color: #FFDD93;
   padding: 5px;
   box-shadow: 7px 7px 3px #FEBD2B;
@@ -62,35 +69,42 @@ body {
   width: 100%;
   margin: 0 auto;
 }
-.question_button {
+.question_button, .voting {
   width: 100%;
   min-width: 300px;
   margin: 2em auto;
   text-align: center;
 }
-.question_yes a {
+.voting form div {
+  display: inline;
+}
+.question_yes a, .upvote_button {
   background-color: #BAEE9E;
   padding: 0.5em;
   border-radius: 0.75em;
   text-decoration: none;
   color: #286308;
+  border: 0;
 }
 .question_yes a:hover {
   background-color: #CAF3B4;
   color: #367913;
 }
-.question_no a {
+.question_no a, .downvote_button {
   background-color: #FFB3AA;
   padding: 0.5em;
   border-radius: 0.75em;
   text-decoration: none;
   color: #721509;
+  border: 0;
 }
 .question_no a:hover {
   background-color: #FFC4BC;
   color: #8B2316;
 }
-
+.answer_box {
+  margin-bottom: 3em;
+}
 .answer_list {
   list-style-type: none;
   padding-left: 0;
@@ -100,6 +114,10 @@ body {
 }
 .vote_total {
   text-align: center;
+  display: inline;
+  padding: 1.5%;
+  color: tomato;
+  margin: 5%;
 }
 
 /* vote button styles */
