@@ -11,7 +11,7 @@ body {
   opacity: 0.25;
 }
 
-textarea, .answer_form input[type="submit"] {
+textarea, .answer_form input[type="submit"], .question_form input[type="submit"] {
   display: block;
   width: 65%;
   margin: 1% auto;
