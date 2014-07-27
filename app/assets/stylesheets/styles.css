@@ -13,7 +13,7 @@ body {
 
 textarea, .answer_form input[type="submit"], .question_form input[type="submit"] {
   display: block;
-  width: 65%;
+  width: 80%;
   margin: 1% auto;
   max-width: 500px;
 }
