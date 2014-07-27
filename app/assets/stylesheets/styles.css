@@ -82,26 +82,28 @@ textarea, .answer_form input[type="submit"], .question_form input[type="submit"]
   display: inline;
 }
 .question_yes a, .upvote_button {
-  font-size: 1.25em;
+  font-size: 1.5em;
   background-color: #BAEE9E;
   padding: 0.5em;
   border-radius: 0.75em;
   text-decoration: none;
   color: #286308;
   border: 0;
+  margin: 1%;
 }
 .question_yes a:hover {
   background-color: #CAF3B4;
   color: #367913;
 }
 .question_no a, .downvote_button {
-  font-size: 1.25em;
+  font-size: 1.5em;
   background-color: #FFB3AA;
   padding: 0.5em;
   border-radius: 0.75em;
   text-decoration: none;
   color: #721509;
   border: 0;
+  margin: 1%;
 }
 .question_no a:hover {
   background-color: #FFC4BC;
