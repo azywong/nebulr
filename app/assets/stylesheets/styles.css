@@ -67,18 +67,22 @@ textarea, .answer_form input[type="submit"], .question_form input[type="submit"]
   box-shadow: 7px 7px 3px #FEBD2B;
   max-width: 500px;
   width: 100%;
-  margin: 0 auto;
+  margin: 2% auto;
+  font-size: 1.5em;
 }
 .question_button, .voting {
   width: 100%;
   min-width: 300px;
-  margin: 2em auto;
+  margin: auto;
+  margin-top: 2em;
+  margin-bottom: 3em;
   text-align: center;
 }
 .voting form div {
   display: inline;
 }
 .question_yes a, .upvote_button {
+  font-size: 1.25em;
   background-color: #BAEE9E;
   padding: 0.5em;
   border-radius: 0.75em;
@@ -91,6 +95,7 @@ textarea, .answer_form input[type="submit"], .question_form input[type="submit"]
   color: #367913;
 }
 .question_no a, .downvote_button {
+  font-size: 1.25em;
   background-color: #FFB3AA;
   padding: 0.5em;
   border-radius: 0.75em;
@@ -127,4 +132,26 @@ textarea, .answer_form input[type="submit"], .question_form input[type="submit"]
 }
 .button_to, .button_to div {
   display: inline;
+}
+
+.push {
+  margin-top: 5%;
+}
+.intro_button {
+  margin-top: 10%;
+}
+.intro_question_button {
+  font-size: 1.25em;
+  background-color: #BAEE9E;
+  padding: 0.5em;
+  border-radius: 0.75em;
+  text-decoration: none;
+  color: #286308;
+  border: 0;
+  margin: 1%;
+}
+.intro_question_button:hover {
+  background-color: #CAF3B4;
+  color: #367913;
+  text-decoration: none;
 }

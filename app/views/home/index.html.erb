@@ -1,4 +1,9 @@
 <% if session[:id]%>
+  <h1>Welcome <%= @user.name %> </h1>
+  <h4>Get started by clicking one of the links!</h4>
+  <div class="intro_button">
+    <%= link_to "Answer Questions", questions_path, :class => "intro_question_button" %><%= link_to "New Question", new_question_path, :class => "intro_question_button" %>
+  </div>
 <% else %>
   <%= render partial: "/sessions/new" %>
 <% end %>

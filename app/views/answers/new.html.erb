@@ -1,0 +1,9 @@
+<% if @question.user_id == session[:id] %>
+  <p>you can't answer your own question!</p>
+  <span class="question_no"><%= link_to "view another?", questions_path %></span>
+<% else %>
+  <%= form_for ([@question, @answer]), html: {class: "answer_form"} do |f| %>
+    <%= f.text_area :text %>
+    <%= f.submit "Answer" %>
+  <% end %>
+<% end %>

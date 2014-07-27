@@ -1,5 +1,8 @@
   <% if @question %>
+  <div class="push">
     <p><strong><%= @question.text %></strong></p>
+
+
     <ul class="answer_list">
       <% @question.answers.each do |answer| %>
         <li class="answer_box">
@@ -17,12 +20,5 @@
         </li>
       <% end %>
     </ul>
+  </div>
   <% end %>
-
-<% if @question.user_id == session[:id] %>
-<% else %>
-  <%= form_for ([@question, @answer]), html: {class: "answer_form"} do |f| %>
-    <%= f.text_area :text %>
-    <%= f.submit "Answer" %>
-  <% end %>
-<% end %>

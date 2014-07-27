@@ -1,6 +1,7 @@
 class AnswersController < ApplicationController
   def new
     @answer = Answer.new
+    @question = Question.find(params[:question_id])
   end
 
   def create
@@ -9,6 +10,6 @@ class AnswersController < ApplicationController
     @answer = Answer.create(params["answer"])
     @question.answers << @answer
     user.answers << @answer
-    redirect_to question_url(@question)
+    redirect_to questions_path
   end
 end
