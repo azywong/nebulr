@@ -1,13 +1,4 @@
-<% if session[:id] %>
-  logged in
-  <br />
-  <%= link_to "my questions", user_questions_path %>
-  <br />
-  <%= link_to "new question", new_question_path %>
-  <br />
-  <%= link_to "browse", questions_path %>
-  <br />
-  <%= link_to "logout", sessions_exit_path %>
+<% if session[:id]%>
 <% else %>
-  <%= link_to "not logged in", sessions_new_path %>
+  <%= render partial: "/sessions/new" %>
 <% end %>
